@@ -1,0 +1,73 @@
+body {
+  padding: 32px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  background-color: #ccc;
+}
+h1{
+  color: #4c4c4c;
+}
+.parent{
+  border: 1px solid #ccc;
+  background-color: #eee;
+  padding: 10px;
+}
+.child{
+  border: 1px solid black;
+  background-color: #ccc;
+  padding: 10px;
+}
+
+.top{
+  margin-top: 50px;
+}
+
+.app-content{
+
+  .examples{
+    width:940px;
+    padding:0;
+    background-color:transparent;
+  }
+
+  .section1{
+    padding:0 15px;
+  }
+  .md-toolbar-tools{
+    h3{
+      margin:15px 0;
+    }
+    p{
+      font-size: 14px;
+      margin:0 0 20px 0;
+    }
+    &.no-height{
+      height:auto;
+      max-height: none;
+    }
+  }
+}
+
+.setup{
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+
+.puzzle{
+  border: 1px solid red;
+  background-color: #ffdbd6;
+  &.solved{
+    border: 1px solid green;
+    background-color: #ccffda;
+  }
+}
+
+.name{
+  font-weight: bold;
+}
+.hide{
+  display: none;
+}
+.show{
+  display:block;
+}

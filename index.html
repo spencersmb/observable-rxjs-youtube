@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Angular 2 Complete Course</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <!--<script src="node_modules/es6-shim/es6-shim.min.js"></script>-->
+    <!--<script src="node_modules/systemjs/dist/system-polyfills.js"></script>-->
+    <!--<script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>-->
+    <!--<script src="node_modules/systemjs/dist/system.src.js"></script>-->
+    <!--<script src="node_modules/rxjs/bundles/Rx.js"></script>-->
+    <!--<script src="node_modules/angular2/bundles/angular2.dev.js"></script>-->
+    <!--<script src="node_modules/angular2/bundles/router.dev.js"></script>-->
+    <!--<script src="node_modules/angular2/bundles/http.js"></script>-->
+
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script>
+        System.defaultJSExtensions = true;
+    </script>
+
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="node_modules/angular2/bundles/http.js"></script>
+
+
+    <link rel="stylesheet" href="node_modules/ng2-material/dist/ng2-material.css">
+    <link rel="stylesheet" href="node_modules/ng2-material/dist/font.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="src/css/app.css">
+
+    <!-- 2. Configure SystemJS -->
+    <!--<script>-->
+        <!--System.config({-->
+            <!--packages: {-->
+                <!--app: {-->
+                    <!--format: 'register',-->
+                    <!--defaultExtension: 'js'-->
+                <!--}-->
+            <!--}-->
+        <!--});-->
+        <!--System.import('app/boot')-->
+                <!--.then(null, console.error.bind(console));-->
+    <!--</script>-->
+    <script>
+        System.config({
+            packages: {
+                app: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            },
+            map: {
+                'ng2-material': 'node_modules/ng2-material'
+            }
+        });
+        System.import('app/boot')
+                .then(null, console.error.bind(console));
+    </script>
+
+    <!--<link rel="stylesheet" href="node_modules/ng2-material/dist/ng2-material.css">-->
+    <!--<link rel="stylesheet" href="node_modules/ng2-material/dist/font.css">-->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+    <!--<link rel="stylesheet" href="src/css/app.css">-->
+</head>
+<!-- 3. Display the application -->
+<base href="/">
+<body>
+<my-app>Loading...</my-app>
+</body>
+</html>
